@@ -1,0 +1,510 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(205, 100%, 98%);
+  overflow-x: hidden;
+  color: #555;
+  font-family: calibri;
+}
+/* Navigation Bar  */
+
+header {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  justify-content: space-between;
+  font-family: calibri;
+  background-color: hsl(205, 100%, 98%);
+  background-position: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #141414;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.4s;
+}
+
+nav a:hover {
+  color: #3e8cff;
+}
+nav {
+  font-weight: bold;
+}
+.nav_left {
+  color: black;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 25px;
+}
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  visibility: hidden;
+  background-color: #3e8cff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.side_nav {
+  font-family: calibri;
+  position: absolute;
+  top: 70px;
+  width: 97%;
+  z-index: 6;
+  font-weight: bold;
+
+}
+.side_nav div {
+  padding: 10px;
+}
+.side_nav ul {
+  list-style: none;
+}
+.side_nav li {
+  padding: 10px;
+}
+.side_nav a {
+  text-decoration: none;
+  color: #141414;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.5s;
+}
+.side_nav a:hover {
+  color: #3e8cff;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 255px;
+  background-color: hsl(205, 100%, 98%);
+  z-index: 5;
+  border: 15px;
+}
+
+/*   slider*/
+.cont {
+  height: 600px;
+  display: flex;
+  background-image: url(NavImags/2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 5px;
+  font-family: "Calibri", sans-serif;
+  font-size: calibri;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.text {
+  max-width: 40%;
+  margin-left: 40px;
+}
+
+.text h1 {
+  color: #141414;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.text p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.joinus {
+  text-decoration: none;
+  background-color: #3e8cff;
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-left: 15px;
+}
+.joinus:hover {
+  border: 1px solid #3e8cff;
+  color: #141414;
+  background-color: transparent;
+}
+/*
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+.imgs {
+  vertical-align: middle;
+  width:90%;
+  max-height: 500px;
+  object-fit: contain;
+}
+*/
+
+/* service*/
+
+.service {
+  margin-top: 75px;
+  margin-bottom: 70px;
+  padding: 20px;
+  color: #141414;
+}
+.service .h1first {
+  border-left: 8px solid #3e8cff;
+  font-family: calibri;
+}
+.hero_cont {
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  grid-template-rows: repeat(1, 250px);
+  gap: 20px;
+  justify-content: space-around;
+  font-family: calibri;
+}
+.conts {
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(224, 216, 216);
+  border-radius: 10px;
+}
+.font_cont {
+  font-size: 80px;
+  margin-top: 20px;
+  color: #3e8cff;
+}
+.conts:hover {
+  background-color: whitesmoke;
+}
+
+/*Consult*/
+
+.consult {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  font-family: calibri;
+}
+.consult_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, 250px);
+  gap: 40px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.consult1 {
+  padding: 5px;
+}
+.consult1 h2 {
+  text-align: left;
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.colored {
+  color: #3e8cff;
+}
+.inner_conselt {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: #f5fbff;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 20px;
+  border-radius: 10px;
+}
+.inner_conselt:hover {
+  border: 1px solid #3e8cff;
+  box-shadow: 0px 4px 6px;
+  background-color: transparent;
+}
+.coloreds {
+  color: #3e8cff;
+}
+.coloreds_left {
+  color: white;
+  background-color: #3e8cff;
+  width: 25px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.over_text1 {
+  background-color: #3e8cff;
+  border-radius: 10px 0 0 10px;
+  height: 210px;
+  padding-top: 10px;
+  width: 150px;
+  color: white;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.consult4,
+.consult3 {
+  background-image: url(NavImags/img-1.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.consult4 {
+  background-image: url(Home/medical\ doctor.webp);
+}
+
+/* ad*/
+
+.ad {
+  background-color: #07306e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.ads {
+  text-align: center;
+  color: white;
+  font-family: calibri;
+}
+.colored_ad {
+  background-color: #3e8cff;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 15px;
+}
+.ads h2 {
+  font-size: 35px;
+  margin-bottom: -30px;
+}
+.ads p {
+  font-size: 27px;
+}
+
+/*vlog*/
+.vlogs {
+  text-align: center;
+  padding: 30px;
+  margin-top: 70px;
+}
+.vlogs_cont {
+  display: flex;
+  justify-content: center;
+}
+.v_logs {
+  width: 25%;
+  margin-left: 3%;
+  border: 6px solid white;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-bottom: 75px;
+  padding: 15px;
+}
+.v_logs img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.vlog_acnt {
+  font-size: 16px;
+  color: #3e8cff;
+}
+.vlogs_cont {
+  text-align: left;
+}
+.inner_acnt {
+  color: #888;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-left: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.vlogs_cont h2 {
+  color: black;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.vlogs_cont a {
+  text-decoration: none;
+}
+.inner_acnt {
+  margin-bottom: 10px;
+}
+.vlogs_cont .readmore {
+  color: #141414;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.29s;
+  border-bottom: 2px solid #3e8cff;
+}
+.vlogs_cont a:hover,
+.vlogs_cont h2:hover {
+  color: #3e8cff;
+}
+
+/*footer*/
+.footer_data {
+  background-color: #07306e;
+  color: white;
+  font-family: calibri;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 50px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.footer_data h1 {
+  color: #fff;
+  margin-top: 0;
+  padding-right: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 2;
+}
+.footer_grids{
+  font-size: px;
+}
+.footer_grids .fa-solid {
+  max-width: 100%;
+  color: #3e8cff;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 19px;
+}
+.last_appointment {
+  border: 2px solid #3e8cff;
+  width: max-content;
+  padding: 10px 15px 15px 10px;
+  border-radius: 15px;
+  transition: background-color 0.9s;
+  color: #f5fbff;
+  margin-left: 50px;
+}
+.last_appointment .fa-phone {
+  color: white;
+}
+.last_appointment:hover {
+  background-color: #3e8cff;
+}
+.footer_data a {
+  text-decoration: none;
+  color: white;
+}
+/* medias */
+@media all and (max-width: 780px) {
+  .text h1 {
+    font-size: 30px;
+  }
+  .footer_grid {
+    grid-template-columns: repeat(1, 90%);
+    gap: 50px;
+    justify-content: center;
+  }
+  .last_appointment{
+    margin-left: 150px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  header {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  nav,
+  .new5,
+  .new6,
+  .new7 {
+    visibility: hidden;
+  }
+  .menu {
+    visibility: visible;
+  }
+  .hero_cont {
+    grid-template-columns: repeat(2, 210px);
+    grid-template-rows: repeat(2, 250px);
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .consult_grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, 250px);
+    gap: 40px;
+    justify-content: center;
+    padding: 30px;
+  }
+  .ad {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vlogs_cont {
+    flex-direction: column;
+  }
+  .v_logs {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .hero_cont {
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(4, 250px);
+    justify-content: center;
+    gap: 40px;
+  }
+  .text h1 {
+    font-size: 25px;
+  }
+  .joinus {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,58 @@
+body {
+  font-family: calibri;
+}
+.doc_intro {
+  background-color: #3e8cff;
+  text-align: left;
+  background-image: url(NavImags/doctors_banner-title-background.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  position: relative;
+  color: white;
+  margin-bottom: 150px;
+}
+.doc_overlay {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: rgba(2, 32, 77, 0.9);
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  padding: 150px;
+}
+
+/* content*/
+
+.vlogs_cont {
+  text-align: center;
+}
+
+.contact_icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.icons_cont {
+  color: white;
+  background-color: #3e8cff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.icons_cont:hover {
+  background-color: #07306e;
+  cursor: pointer;
+}
+@media all and (max-width: 650px) {
+  .doc_overlay {
+    font-size: 25px;
+  }
+}
