@@ -1,0 +1,182 @@
+body {
+}
+section {
+  height: auto;
+}
+/* slider*/
+.doc_intro {
+  background-color: #3e8cff;
+  text-align: left;
+  background-image: url(NavImags/doctors_banner-title-background.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  position: relative;
+  color: white;
+  margin-bottom: 150px;
+}
+.doc_overlay {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: rgba(2, 32, 77, 0.9);
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  padding: 150px;
+  text-align: center;
+}
+.v_logs h2 {
+  font-family: sans-serif;
+  color: #3e8cff;
+}
+
+.icons_cont {
+  width: 30px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: #3e8cff;
+}
+a {
+  text-transform: capitalize;
+  color: #141414;
+}
+a:hover ,h2:hover{
+  cursor: pointer;
+}
+.contact_icons {
+  margin-top: 20px;
+}
+
+.discription {
+}
+.h1first{
+  margin-left:50px ;
+  text-align: left;
+  border-left: 10px solid #3e8cff;
+}
+/*.grid_container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,650px);
+  gap:20px
+ 
+
+}
+.grids {
+  display: flex;
+  
+  justify-content: space-between;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.caption {
+  margin-left: 20px;
+}
+.grids img {
+  max-width: 100%;
+}
+.grids .imags {
+  max-width: 60%;
+}
+.grids h1 {
+  font-family: "Dancing Script", cursive;
+  color: #008080;
+  border-bottom: 2px solid #ddd;
+}
+.grids p {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #333;
+}
+.grids .right_location {
+  margin-left: 20px;
+}
+.grids_footer {
+  margin-left: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.grids_footer .rating {
+  background-color: #c77533;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+@media all and (max-width: 750px) {
+    .grid_container{
+        grid-template-columns: repeat(1,650px);
+    }
+    
+  }*/
+/*.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grids {
+  border-radius: 10px;
+  background: #f2f2f2;
+  border: 1px solid #dcdcdc;
+}
+
+.grids img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.grids h1 {
+  font-family: "Dancing Script", cursive;
+  color: #008080;
+  border-bottom: 2px solid #ddd;
+}
+
+.grids p {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #333;
+}
+.grids .right_location {
+  margin-left: 20px;
+}
+.caption {
+  padding: 0 10px;
+}
+.grids_footer {
+  margin-left: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.grids_footer .rating {
+  background-color: #c77533;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}*/
+@media all and (max-width: 850px) {
+  .doc_overlay {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .doc_overlay {
+    font-size: 25px;
+  }
+}
