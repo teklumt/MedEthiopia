@@ -66,7 +66,6 @@ nav {
   width: 97%;
   z-index: 6;
   font-weight: bold;
-
 }
 .side_nav div {
   padding: 10px;
@@ -408,7 +407,7 @@ nav {
   font-weight: 600;
   line-height: 2;
 }
-.footer_grids{
+.footer_grids {
   font-size: px;
 }
 .footer_grids .fa-solid {
@@ -447,7 +446,7 @@ nav {
     gap: 50px;
     justify-content: center;
   }
-  .last_appointment{
+  .last_appointment {
     margin-left: 150px;
   }
 }
@@ -506,5 +505,26 @@ nav {
   }
   .joinus {
     font-size: 18px;
+  }
+}
+@media all and (max-width: 480px) {
+  .hero_cont {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, 250px);
+    justify-content: center;
+    gap: 40px;
+  }
+  .text h1 {
+    font-size: 20px;
+  }
+  .joinus {
+    font-size: 10px;
+  }
+  .last_appointment{
+    align-items: start;
+  }
+  section,
+  header,footer {
+    width: 150%;
   }
 }

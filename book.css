@@ -1,0 +1,107 @@
+.books {
+  display: flex;
+  justify-content: center;
+}
+.book {
+  background-color: hsl(205, 100%, 98%);
+  width: 500px;
+  margin-top: 10px;
+  font-family: calibri;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.book h2 {
+  font-size: 40px;
+}
+.book input {
+  margin-bottom: 20px;
+}
+.book #sub {
+  margin-left: 150px;
+  background-color: #3e8cff;
+  border: 1px solid #3e8cff;
+  padding: 10px;
+  color: white;
+  font-family: calibri;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.book #age {
+  width: 50px;
+}
+.book #fname,
+.book #email,
+.book #hospitals {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: calibri;
+  background: #ebebeb;
+  border: 1px solid white;
+ 
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.book #fname:hover,
+.book #email:hover,
+.book #hospitals:hover {
+  background-color: whitesmoke;
+  transition: 0.5s;
+  border: 1px solid #3e8cff;
+  box-shadow: 0 4px 8px #8eb0e2;
+}
+.book #sub:hover,
+.remove_Book {
+  background-color: whitesmoke;
+  border: 1px solid #3e8cff;
+  color: #454545;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.book input::-webkit-input-placeholder {
+  color: #222;
+}
+.book input:focus,
+.form-modal input:active {
+  border: 1px solid #3e8cff;
+}
+.flow_back {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100vh;
+  margin: -18px;
+}
+.flow {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -290px;
+}
+.remove_Book {
+  margin-left: 80%;
+  margin-top: 10px;
+  width: 35px;
+  border: none;
+  background-color: #3e8cff;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 530px) {
+  .book {
+    width: 90%;
+  
+  }
+  
+}
