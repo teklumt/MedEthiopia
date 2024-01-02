@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <section>
+      <div class="flow_back"></div>
+      <div class="flow">
+        <div class="books">
+          <div class="book">
+            <button class="remove_Book"> X </button>
+            <h2>Book Now</h2>
+            <form action="#">
+              <br /><input
+                type="text"
+                name="name"
+                id="fname"
+                placeholder="Fullname"
+                required
+              />
+              <br /><input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your Email"
+                required
+              />
+              <br />Age
+              <input
+                type="number"
+                name="name"
+                id="age"
+                placeholder="18"
+                min="18"
+                required
+              />
+              <br />Sex
+              <label for="M"><input type="radio" id="M" name="Sex" />M</label
+              ><label for="M"><input name="Sex" type="radio" id="F" />F</label>
+              <br /><input
+                type="text"
+                id="hospitals"
+                list="host"
+                placeholder="Select Hospital"
+                required
+              />
+              <datalist id="host" aria-required="true">
+                <option value="Tikur Anbessa Specialized Hospital">
+                  Tikur Anbessa Specialized Hospital
+                </option>
+                <option value="Nordic medical centre">
+                  Nordic medical centre
+                </option>
+                <option value="Bethzatha General Hospital">
+                  Bethzatha General Hospital
+                </option>
+              </datalist>
+              <br />Date
+              <input type="datetime-local" name="date" id="date" />
+              <br /><input type="button" id="sub" value="Book" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
