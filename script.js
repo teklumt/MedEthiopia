@@ -1,3 +1,8 @@
+const book_display = document.querySelector(".book");
+const book_remove = document.querySelector(".remove_Book");
+
+/////////////
+
 document.querySelector(".menu_triger").addEventListener("click", function () {
   document.querySelector(".side_nav ").classList.toggle("hidden");
   document.querySelector(".overlay").classList.toggle("hidden");
@@ -19,3 +24,11 @@ const slideShow = () => {
 };
 
 slideShow();
+
+book_display.addEventListener("click", function () {
+  document.querySelector(".hidden_window").classList.add("create_book_win");
+});
+
+book_remove.addEventListener("click", function () {
+  document.querySelector(".hidden_window").classList.remove("create_book_win");
+});

@@ -29,7 +29,7 @@ nav a {
   color: #141414;
   font-family: Poppins, sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 530;
   transition: color 0.4s;
 }
 
@@ -75,6 +75,7 @@ nav {
 }
 .side_nav li {
   padding: 10px;
+  margin-top: 10px;
 }
 .side_nav a {
   text-decoration: none;
@@ -94,13 +95,47 @@ nav {
 .overlay {
   position: absolute;
   width: 100%;
-  height: 255px;
+  height: 270px;
   background-color: hsl(205, 100%, 98%);
   z-index: 5;
   border: 15px;
 }
+.book button {
+  text-decoration: none;
+  background-color: #3e8cff;
+
+  color: white;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: -10px;
+  font-size: 18px;
+  /* border-radius: 10px 0; */
+  transition: 0.5s;
+  border: 1px solid #3e8cff;
+  font-weight: 540;
+}
+.book button:hover {
+  border: 1px solid #3e8cff;
+  color: white;
+  background-color: #2e5b9e;
+}
+.signins a {
+  border: 1px solid #3e8cff;
+  padding: 5px;
+  transition: 0.5s;
+  font-weight: 540px;
+  margin-top: -10px;
+  /* border-radius: 10px 0; */
+}
+.signins a:hover {
+  color: white;
+  background-color: #3e8cff;
+}
 
 /*   slider*/
+
 .cont {
   height: 600px;
   display: flex;
@@ -520,11 +555,147 @@ nav {
   .joinus {
     font-size: 10px;
   }
-  .last_appointment{
+  .last_appointment {
     align-items: start;
   }
   section,
-  header,footer {
+  header,
+  footer {
     width: 150%;
+  }
+}
+
+.over2 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  margin: -18px;
+}
+.hidden_window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  /* background-color: hsl(205, 100%, 98%); */
+}
+.create_book_win {
+  display: block;
+}
+
+/* .flow_back {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  margin-top: 10px;
+  top: 0;
+} */
+
+.books1 {
+  display: flex;
+  justify-content: center;
+}
+.book2 {
+  background-color: hsl(205, 100%, 98%);
+  width: 500px;
+  margin-top: 10px;
+  font-family: calibri;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3e8cff;
+  border-radius: 15px;
+}
+.book2 h2 {
+  font-size: 40px;
+}
+.book2 input {
+  margin-bottom: 20px;
+}
+.book2 #sub {
+  margin-left: 150px;
+  background-color: #3e8cff;
+  border: 1px solid #3e8cff;
+  padding: 10px;
+  color: white;
+  font-family: calibri;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.book2 #age {
+  width: 50px;
+}
+.book2 #fname,
+.book2 #email,
+.book2 #hospitals {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: calibri;
+  background: #ebebeb;
+  border: 1px solid white;
+
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.book2 #fname:hover,
+.book2 #email:hover,
+.book2 #hospitals:hover {
+  background-color: whitesmoke;
+  transition: 0.5s;
+  border: 1px solid #3e8cff;
+  box-shadow: 0 4px 8px #8eb0e2;
+}
+.book2 #sub:hover,
+.remove_Book {
+  background-color: whitesmoke;
+  border: 1px solid #3e8cff;
+  color: #454545;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.book2 input::-webkit-input-placeholder {
+  color: #222;
+}
+.book2 input:focus,
+.form-modal input:active {
+  border: 1px solid #3e8cff;
+}
+/* .flow_back {
+  position: absolute;
+  background-color: rgba(0, 0, 0,0.5);
+  width: 100%;
+  height: 100vh;
+  margin: -18px;
+} */
+.flow {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -290px;
+}
+.remove_Book {
+  margin-left: 80%;
+  margin-top: 10px;
+  width: 35px;
+  border: none;
+  background-color: #3e8cff;
+  color: white;
+  /* border-radius: 10px; */
+  font-size: 20px;
+}
+@media only screen and (max-width: 530px) {
+  .book2 {
+    width: 90%;
   }
 }
