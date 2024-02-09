@@ -95,6 +95,8 @@ h2:hover {
 .gebriel h2,
 .Addis h2,
 .Myung h2,
+.LandMark h2,
+.Kal h2,
 .Amin h2 {
   text-align: center;
   color: #333;
@@ -104,6 +106,8 @@ h2:hover {
 .gebriel button,
 .Addis button,
 .Myung button,
+.LandMark button,
+.Kal button,
 .Amin button {
   margin: 10px 0;
   padding: 8px 15px;
@@ -117,6 +121,8 @@ h2:hover {
 .gebriel img,
 .Addis img,
 .Myung img,
+.LandMark img,
+.Kal img,
 .Amin img {
   width: 300px;
   height: 300px;
@@ -126,6 +132,8 @@ h2:hover {
 .gebriel button a,
 .Addis button a,
 .Myung button a,
+.LandMark button a,
+.Kal button a,
 .Amin button a {
   color: white;
   text-decoration: none;
@@ -134,6 +142,8 @@ h2:hover {
 .gebriel button:hover,
 .Addis button:hover,
 .Myung button:hover,
+.LandMark button:hover,
+.Kal button:hover,
 .Nardic button:hover,
 .Amin button:hover {
   background-color: #0056b3;
@@ -143,6 +153,8 @@ h2:hover {
 .gebriel p,
 .Addis p,
 .Myung p,
+.LandMark p,
+.Kal p,
 .Amin p,
 .Nardic p {
   text-align: justify;
@@ -153,6 +165,8 @@ h2:hover {
 .gebriel ol,
 .Addis ol,
 .Myung ol,
+.LandMark ol,
+.Kal ol,
 .Amin ol,
 .Nardic ol {
   list-style-type: decimal;
@@ -163,6 +177,8 @@ h2:hover {
 .gebriel li,
 .Addis li,
 .Myung li,
+.LandMark li,
+.Kal li,
 .Amin li,
 .Nardic li {
   margin-bottom: 15px;
@@ -172,6 +188,8 @@ h2:hover {
 .gebriel h3,
 .Addis h3,
 .Myung h3,
+.LandMark h3,
+.Kal h3,
 .Amin h3,
 .Nardic h3 {
   color: #007bff;
@@ -181,6 +199,8 @@ h2:hover {
 .gebriel img,
 .Addis img,
 .Myung img,
+.LandMark img,
+.Kal img,
 .Amin img,
 .Nardic img {
   max-width: 100%;
@@ -191,6 +211,8 @@ h2:hover {
 .gebriel details,
 .Addis details,
 .Myung details,
+.LandMark details,
+.Kal details,
 .Amin details {
   margin: 20px 0;
 }
@@ -199,6 +221,8 @@ h2:hover {
 .gebriel details p,
 .Addis details p,
 .Myung details p,
+.LandMark details p,
+.Kal details p,
 .Amin details p {
   margin-top: 10px;
 }
@@ -207,6 +231,8 @@ h2:hover {
 .gebriel span,
 .Addis span,
 .Myung span,
+.LandMark span,
+.Kal span,
 .Amin span {
   font-size: 20px;
   color: #007bff;
@@ -216,6 +242,8 @@ h2:hover {
 .gebriel div,
 .Addis div,
 .Myung div,
+.LandMark div,
+.Kal div,
 .Amin div {
   margin-bottom: 10px;
 }
@@ -224,6 +252,8 @@ h2:hover {
 .gebriel section,
 .Addis section,
 .Myung section,
+.LandMark section,
+.Kal section,
 .Amin section {
   padding: 20px;
 }
@@ -232,6 +262,8 @@ h2:hover {
 .gebriel table,
 .Addis table,
 .Myung table,
+.LandMark table,
+.Kal table,
 .Amin table,
 .Nardic table {
   width: 100%;
@@ -242,6 +274,8 @@ h2:hover {
 .gebriel td,
 .Addis td,
 .Myung td,
+.LandMark td,
+.Kal td,
 .Amin td {
   border: 1px solid #ddd;
   padding: 20px;
@@ -251,6 +285,8 @@ h2:hover {
 .gebriel font,
 .Addis font,
 .Myung font,
+.LandMark font,
+.Kal font,
 .Amin font {
   font-weight: bold;
 }
@@ -258,6 +294,8 @@ h2:hover {
 .gebriel .btn,
 .Addis .btn,
 .Myung .btn,
+.LandMark .btn,
+.Kal .btn,
 .Amin .btn,
 .Nardic .btn {
   margin-right: 20px;
@@ -268,6 +306,8 @@ h2:hover {
 .gebriel .heading,
 .Addis .heading,
 .Myung .heading,
+.LandMark .heading,
+.Kal .heading,
 .Amin .heading {
   display: flex;
   justify-content: space-between;
@@ -293,6 +333,8 @@ h2:hover {
 .gebriel,
 .Addis,
 .Myung,
+.LandMark,
+.Kal,
 .Amin,
 .Nardic {
   width: 70%;
@@ -355,6 +397,8 @@ h2:hover {
   .gebriel img,
   .Addis img,
   .Myung img,
+  .LandMark img,
+  .Kal img,
   .Amin img {
     width: 100%;
   }
@@ -362,6 +406,8 @@ h2:hover {
   .gebriel table,
   .Addis table,
   .Myung table,
+  .LandMark table,
+  .Kal table,
   .Amin table {
     padding: 0;
   }
@@ -369,6 +415,8 @@ h2:hover {
   .gebriel td,
   .Addis td,
   .Myung td,
+  .LandMark td,
+  .Kal td,
   .Amin td {
     padding: 10px;
   }

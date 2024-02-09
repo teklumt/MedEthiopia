@@ -549,6 +549,9 @@ nav {
     justify-content: center;
     gap: 40px;
   }
+  .menu {
+    right: -400px;
+  }
   .text h1 {
     font-size: 20px;
   }
@@ -557,6 +560,9 @@ nav {
   }
   .last_appointment {
     align-items: start;
+  }
+  .overlay {
+    width: 150%;
   }
   section,
   header,
@@ -577,6 +583,7 @@ nav {
   top: 50%;
   left: 50%;
   display: none;
+  z-index: 1;
   /* background-color: hsl(205, 100%, 98%); */
 }
 .create_book_win {
@@ -651,15 +658,15 @@ nav {
 .book2 #hospitals:hover {
   background-color: whitesmoke;
   transition: 0.5s;
-  border: 1px solid #3e8cff;
-  box-shadow: 0 4px 8px #8eb0e2;
+  /* border: 1px solid #3e8cff; */
+  /* box-shadow: 0 4px 8px #8eb0e2; */
 }
 .book2 #sub:hover,
 .remove_Book {
   background-color: whitesmoke;
-  border: 1px solid #3e8cff;
+  /* border: 1px solid #3e8cff; */
   color: #454545;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   cursor: pointer;
 }
 
@@ -668,7 +675,8 @@ nav {
 }
 .book2 input:focus,
 .form-modal input:active {
-  border: 1px solid #3e8cff;
+  /* border: 1px solid #3e8cff; */
+  outline: none;
 }
 /* .flow_back {
   position: absolute;
@@ -693,6 +701,19 @@ nav {
   color: white;
   /* border-radius: 10px; */
   font-size: 20px;
+}
+.bookBack {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 506.6%;
+  position: absolute;
+  display: none;
+  top: 0; 
+  z-index: 0;
+ 
+}
+.activeBook{
+  display: block;
 }
 @media only screen and (max-width: 530px) {
   .book2 {
