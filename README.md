@@ -1,4 +1,4 @@
-Certainly! Here's an expanded version:
+
 
 ---
 
