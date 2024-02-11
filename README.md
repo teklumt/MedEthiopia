@@ -4,7 +4,7 @@ Certainly! Here's an expanded version:
 
 # MedEthiopia
 
-## **Online Hospital and Doctor Tracking with Integrated Health Appointment Booking Platform**
+## **Online Hospital and Doctor Tracking with Integrated Health Appointment Booking website**
 
 ### Group: III
 
