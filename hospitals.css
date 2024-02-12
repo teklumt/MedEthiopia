@@ -50,7 +50,8 @@ a {
   text-transform: capitalize;
   color: #141414;
 }
-a:hover ,h2:hover{
+a:hover,
+h2:hover {
   cursor: pointer;
 }
 .contact_icons {
@@ -59,116 +60,374 @@ a:hover ,h2:hover{
 
 .discription {
 }
-.h1first{
-  margin-left:50px ;
+.h1first {
+  margin-left: 50px;
   text-align: left;
   border-left: 10px solid #3e8cff;
 }
-/*.grid_container {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(2,650px);
-  gap:20px
- 
 
+/* hospitals*/
+.v_logs {
+  position: relative;
 }
-.grids {
-  display: flex;
-  
-  justify-content: space-between;
-  border: 2px solid black;
-  margin-right: 10px;
-  margin-bottom: 30px;
+.v_logs div {
+  margin-bottom: 10px;
 }
-.caption {
-  margin-left: 20px;
+.seeMore {
+  border: 1px solid #3e8cff;
+  color: white;
+  font-family: calibri;
+  background-color: #3e8cff;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  transition: 0.5s;
 }
-.grids img {
-  max-width: 100%;
+.seeMore:hover {
+  background-color: transparent;
+  color: #141414;
+  cursor: pointer;
 }
-.grids .imags {
-  max-width: 60%;
-}
-.grids h1 {
-  font-family: "Dancing Script", cursive;
-  color: #008080;
-  border-bottom: 2px solid #ddd;
-}
-.grids p {
-  font-family: sans-serif;
-  line-height: 1.5;
-  font-size: 14px;
+
+.bete h2,
+.gebriel h2,
+.Addis h2,
+.Myung h2,
+.LandMark h2,
+.Kal h2,
+.Amin h2 {
+  text-align: center;
   color: #333;
 }
-.grids .right_location {
-  margin-left: 20px;
-}
-.grids_footer {
-  margin-left: 0 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.grids_footer .rating {
-  background-color: #c77533;
-  padding: 5px;
-  color: white;
-  border-radius: 5px;
-}
-@media all and (max-width: 750px) {
-    .grid_container{
-        grid-template-columns: repeat(1,650px);
-    }
-    
-  }*/
-/*.grid_container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
 
-.grids {
+.bete button,
+.gebriel button,
+.Addis button,
+.Myung button,
+.LandMark button,
+.Kal button,
+.Amin button {
+  margin: 10px 0;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.bete img,
+.gebriel img,
+.Addis img,
+.Myung img,
+.LandMark img,
+.Kal img,
+.Amin img {
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
-  background: #f2f2f2;
-  border: 1px solid #dcdcdc;
+}
+.bete button a,
+.gebriel button a,
+.Addis button a,
+.Myung button a,
+.LandMark button a,
+.Kal button a,
+.Amin button a {
+  color: white;
+  text-decoration: none;
+}
+.bete button:hover,
+.gebriel button:hover,
+.Addis button:hover,
+.Myung button:hover,
+.LandMark button:hover,
+.Kal button:hover,
+.Nardic button:hover,
+.Amin button:hover {
+  background-color: #0056b3;
 }
 
-.grids img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+.bete p,
+.gebriel p,
+.Addis p,
+.Myung p,
+.LandMark p,
+.Kal p,
+.Amin p,
+.Nardic p {
+  text-align: justify;
+  color: #555;
 }
 
-.grids h1 {
-  font-family: "Dancing Script", cursive;
-  color: #008080;
-  border-bottom: 2px solid #ddd;
-}
-
-.grids p {
-  font-family: sans-serif;
-  line-height: 1.5;
-  font-size: 14px;
-  color: #333;
-}
-.grids .right_location {
+.bete ol,
+.gebriel ol,
+.Addis ol,
+.Myung ol,
+.LandMark ol,
+.Kal ol,
+.Amin ol,
+.Nardic ol {
+  list-style-type: decimal;
   margin-left: 20px;
 }
-.caption {
-  padding: 0 10px;
+
+.bete li,
+.gebriel li,
+.Addis li,
+.Myung li,
+.LandMark li,
+.Kal li,
+.Amin li,
+.Nardic li {
+  margin-bottom: 15px;
 }
-.grids_footer {
-  margin-left: 0 10px;
+
+.bete h3,
+.gebriel h3,
+.Addis h3,
+.Myung h3,
+.LandMark h3,
+.Kal h3,
+.Amin h3,
+.Nardic h3 {
+  color: #007bff;
+}
+
+.bete img,
+.gebriel img,
+.Addis img,
+.Myung img,
+.LandMark img,
+.Kal img,
+.Amin img,
+.Nardic img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bete details,
+.gebriel details,
+.Addis details,
+.Myung details,
+.LandMark details,
+.Kal details,
+.Amin details {
+  margin: 20px 0;
+}
+
+.bete details p,
+.gebriel details p,
+.Addis details p,
+.Myung details p,
+.LandMark details p,
+.Kal details p,
+.Amin details p {
+  margin-top: 10px;
+}
+
+.bete span,
+.gebriel span,
+.Addis span,
+.Myung span,
+.LandMark span,
+.Kal span,
+.Amin span {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.bete div,
+.gebriel div,
+.Addis div,
+.Myung div,
+.LandMark div,
+.Kal div,
+.Amin div {
+  margin-bottom: 10px;
+}
+
+.bete section,
+.gebriel section,
+.Addis section,
+.Myung section,
+.LandMark section,
+.Kal section,
+.Amin section {
+  padding: 20px;
+}
+
+.bete table,
+.gebriel table,
+.Addis table,
+.Myung table,
+.LandMark table,
+.Kal table,
+.Amin table,
+.Nardic table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bete td,
+.gebriel td,
+.Addis td,
+.Myung td,
+.LandMark td,
+.Kal td,
+.Amin td {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.bete font,
+.gebriel font,
+.Addis font,
+.Myung font,
+.LandMark font,
+.Kal font,
+.Amin font {
+  font-weight: bold;
+}
+.bete .btn,
+.gebriel .btn,
+.Addis .btn,
+.Myung .btn,
+.LandMark .btn,
+.Kal .btn,
+.Amin .btn,
+.Nardic .btn {
+  margin-right: 20px;
+  width: 100px;
+  height: 40px;
+}
+.bete .heading,
+.gebriel .heading,
+.Addis .heading,
+.Myung .heading,
+.LandMark .heading,
+.Kal .heading,
+.Amin .heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  background-color: aliceblue;
 }
-.grids_footer .rating {
-  background-color: #c77533;
-  padding: 5px;
+.inner_grids_ {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 10px;
+  justify-content: space-between;
+}
+.overOver {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 428.6%;
+  position: absolute;
+  display: none;
+  top: 0;
+}
+.bete,
+.gebriel,
+.Addis,
+.Myung,
+.LandMark,
+.Kal,
+.Amin,
+.Nardic {
+  width: 70%;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  background-color: hsl(205, 100%, 98%);
+  top: 150px;
+  left: 150px;
+  border-radius: 10px;
+}
+.Nardic {
+  padding: 10px;
+}
+
+.Nardic .btn {
+  background-color: #007bff;
+}
+.Nardic .btn a {
   color: white;
-  border-radius: 5px;
-}*/
+  text-decoration: none;
+}
+.Nardic .btn {
+  border: 0px;
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  border-radius: 0 10px 0 0;
+}
+.nards_gr {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 50px;
+}
+.nards {
+  width: 90%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.learnMores {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #007bff;
+  border: none;
+  padding: 5px;
+}
+.learnMores a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  display: block;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .bete img,
+  .gebriel img,
+  .Addis img,
+  .Myung img,
+  .LandMark img,
+  .Kal img,
+  .Amin img {
+    width: 100%;
+  }
+  .bete table,
+  .gebriel table,
+  .Addis table,
+  .Myung table,
+  .LandMark table,
+  .Kal table,
+  .Amin table {
+    padding: 0;
+  }
+  .bete td,
+  .gebriel td,
+  .Addis td,
+  .Myung td,
+  .LandMark td,
+  .Kal td,
+  .Amin td {
+    padding: 10px;
+  }
+  .inner_grids_ {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .nards_gr {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
 @media all and (max-width: 850px) {
   .doc_overlay {
     font-size: 30px;
@@ -180,3 +439,4 @@ a:hover ,h2:hover{
     font-size: 25px;
   }
 }
+

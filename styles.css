@@ -29,7 +29,7 @@ nav a {
   color: #141414;
   font-family: Poppins, sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 530;
   transition: color 0.4s;
 }
 
@@ -75,6 +75,7 @@ nav {
 }
 .side_nav li {
   padding: 10px;
+  margin-top: 10px;
 }
 .side_nav a {
   text-decoration: none;
@@ -94,13 +95,47 @@ nav {
 .overlay {
   position: absolute;
   width: 100%;
-  height: 255px;
+  height: 270px;
   background-color: hsl(205, 100%, 98%);
   z-index: 5;
   border: 15px;
 }
+.book button {
+  text-decoration: none;
+  background-color: #3e8cff;
+
+  color: white;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: -10px;
+  font-size: 18px;
+  /* border-radius: 10px 0; */
+  transition: 0.5s;
+  border: 1px solid #3e8cff;
+  font-weight: 540;
+}
+.book button:hover {
+  border: 1px solid #3e8cff;
+  color: white;
+  background-color: #2e5b9e;
+}
+.signins a {
+  border: 1px solid #3e8cff;
+  padding: 5px;
+  transition: 0.5s;
+  font-weight: 540px;
+  margin-top: -10px;
+  /* border-radius: 10px 0; */
+}
+.signins a:hover {
+  color: white;
+  background-color: #3e8cff;
+}
 
 /*   slider*/
+
 .cont {
   height: 600px;
   display: flex;
@@ -514,17 +549,367 @@ nav {
     justify-content: center;
     gap: 40px;
   }
+  .menu {
+    right: -400px;
+  }
   .text h1 {
     font-size: 20px;
   }
   .joinus {
     font-size: 10px;
   }
-  .last_appointment{
+  .last_appointment {
     align-items: start;
   }
-  section,
-  header,footer {
+  .overlay {
     width: 150%;
+  }
+  section,
+  header,
+  footer {
+    width: 150%;
+  }
+}
+
+.over2 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100vh;
+  margin: -18px;
+}
+.hidden_window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  z-index: 1;
+  /* background-color: hsl(205, 100%, 98%); */
+}
+.create_book_win {
+  display: block;
+}
+
+/* .flow_back {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  margin-top: 10px;
+  top: 0;
+} */
+
+.books1 {
+  display: flex;
+  justify-content: center;
+}
+.book2 {
+  background-color: hsl(205, 100%, 98%);
+  width: 500px;
+  margin-top: 10px;
+  font-family: calibri;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3e8cff;
+  border-radius: 15px;
+}
+.book2 h2 {
+  font-size: 40px;
+}
+.book2 input {
+  margin-bottom: 20px;
+}
+.book2 #sub {
+  margin-left: 150px;
+  background-color: #3e8cff;
+  border: 1px solid #3e8cff;
+  padding: 10px;
+  color: white;
+  font-family: calibri;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.book2 #age {
+  width: 50px;
+}
+.book2 #fname,
+.book2 #email,
+.book2 #hospitals {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: calibri;
+  background: #ebebeb;
+  border: 1px solid white;
+
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.book2 #fname:hover,
+.book2 #email:hover,
+.book2 #hospitals:hover {
+  background-color: whitesmoke;
+  transition: 0.5s;
+  /* border: 1px solid #3e8cff; */
+  /* box-shadow: 0 4px 8px #8eb0e2; */
+}
+.book2 #sub:hover,
+.remove_Book {
+  background-color: whitesmoke;
+  /* border: 1px solid #3e8cff; */
+  color: #454545;
+  /* transition: 0.5s; */
+  cursor: pointer;
+}
+
+.book2 input::-webkit-input-placeholder {
+  color: #222;
+}
+.book2 input:focus,
+.form-modal input:active {
+  /* border: 1px solid #3e8cff; */
+  outline: none;
+}
+/* .flow_back {
+  position: absolute;
+  background-color: rgba(0, 0, 0,0.5);
+  width: 100%;
+  height: 100vh;
+  margin: -18px;
+} */
+.flow {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 50%;
+  margin-top: -290px;
+}
+.remove_Book {
+  margin-left: 80%;
+  margin-top: 10px;
+  width: 35px;
+  border: none;
+  background-color: #3e8cff;
+  color: white;
+  /* border-radius: 10px; */
+  font-size: 20px;
+}
+.bookBack {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 506.6%;
+  position: absolute;
+  display: none;
+  top: 0; 
+  z-index: 0;
+ 
+}
+.activeBook{
+  display: block;
+}
+@media only screen and (max-width: 530px) {
+  .book2 {
+    width: 90%;
+  }
+}
+
+.openai * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+.openai .chatbot-toggler {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #3e8cff;
+  transition: all 0.2s ease;
+}
+.openai body.show-chatbot .openai .chatbot-toggler {
+  transform: rotate(90deg);
+}
+.openai .chatbot-toggler span {
+  color: #fff;
+  position: absolute;
+}
+.openai .chatbot-toggler span:last-child,
+.openai body.show-chatbot .openai .chatbot-toggler span:first-child {
+  opacity: 0;
+}
+.openai body.show-chatbot .chatbot-toggler span:last-child {
+  opacity: 1;
+}
+.openai .chatbot {
+  position: fixed;
+  right: 35px;
+  bottom: 90px;
+  width: 420px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: bottom right;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
+}
+body.show-chatbot .chatbot {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.openai .chatbot header {
+  padding: 16px 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #3e8cff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.openai .chatbot header span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.openai header h2 {
+  font-size: 1.4rem;
+  
+}
+
+.openai .chatbot .chatbox {
+  overflow-y: auto;
+  height: 510px;
+  padding: 30px 20px 100px;
+}
+.openai .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+.openai .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 25px;
+}
+.openai .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+.openai .chatbox .chat {
+  display: flex;
+  list-style: none;
+}
+.openai .chatbox .outgoing {
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+.openai .chatbox .incoming span {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  line-height: 32px;
+  align-self: flex-end;
+  background: #3e8cff;
+  border-radius: 4px;
+  margin: 0 10px 7px 0;
+}
+.chatbox .chat p {
+  white-space: pre-wrap;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 75%;
+  color: #fff;
+  font-size: 0.95rem;
+  background: #3e8cff;
+}
+.chatbox .incoming p {
+  border-radius: 10px 10px 10px 0;
+}
+.chatbox .chat p.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+.chatbox .incoming p {
+  color: #000;
+  background: #f2f2f2;
+}
+.chatbot .chat-input {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 3px 20px;
+  border-top: 1px solid #ddd;
+}
+.chat-input textarea {
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 180px;
+  padding: 15px 15px 15px 0;
+  font-size: 0.95rem;
+}
+.chat-input span {
+  align-self: flex-end;
+  color: #3e8cff;
+  cursor: pointer;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  font-size: 1.35rem;
+}
+.chat-input textarea:valid ~ span {
+  visibility: visible;
+}
+
+@media (max-width: 490px) {
+  .chatbot-toggler {
+    right: 20px;
+    bottom: 20px;
+  }
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    border-radius: 0;
+    width: 100%;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+    padding: 25px 15px 100px;
+  }
+  .chatbot .chat-input {
+    padding: 5px 15px;
+  }
+  .chatbot header span {
+    display: block;
   }
 }

@@ -1,8 +1,8 @@
-.books {
+.books1 {
   display: flex;
   justify-content: center;
 }
-.book {
+.book2 {
   background-color: hsl(205, 100%, 98%);
   width: 500px;
   margin-top: 10px;
@@ -14,13 +14,13 @@
   justify-content: center;
   align-items: center;
 }
-.book h2 {
+.book2 h2 {
   font-size: 40px;
 }
-.book input {
+.book2 input {
   margin-bottom: 20px;
 }
-.book #sub {
+.book2 #sub {
   margin-left: 150px;
   background-color: #3e8cff;
   border: 1px solid #3e8cff;
@@ -32,12 +32,12 @@
   width: 80px;
 }
 
-.book #age {
+.book2 #age {
   width: 50px;
 }
-.book #fname,
-.book #email,
-.book #hospitals {
+.book2 #fname,
+.book2 #email,
+.book2 #hospitals {
   width: 400px;
   height: 30px;
   margin-bottom: 20px;
@@ -50,15 +50,15 @@
   padding: 10px;
 }
 
-.book #fname:hover,
-.book #email:hover,
-.book #hospitals:hover {
+.book2 #fname:hover,
+.book2 #email:hover,
+.book2 #hospitals:hover {
   background-color: whitesmoke;
   transition: 0.5s;
   border: 1px solid #3e8cff;
   box-shadow: 0 4px 8px #8eb0e2;
 }
-.book #sub:hover,
+.book2 #sub:hover,
 .remove_Book {
   background-color: whitesmoke;
   border: 1px solid #3e8cff;
@@ -67,16 +67,16 @@
   cursor: pointer;
 }
 
-.book input::-webkit-input-placeholder {
+.book2 input::-webkit-input-placeholder {
   color: #222;
 }
-.book input:focus,
+.book2 input:focus,
 .form-modal input:active {
   border: 1px solid #3e8cff;
 }
 .flow_back {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.);
   width: 100%;
   height: 100vh;
   margin: -18px;
@@ -99,7 +99,7 @@
   font-size: 20px;
 }
 @media only screen and (max-width: 530px) {
-  .book {
+  .book2 {
     width: 90%;
   
   }
