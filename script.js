@@ -1,7 +1,8 @@
 const book_display = document.querySelector(".book");
 const book_remove = document.querySelector(".remove_Book");
 const book_back = document.querySelector(".bookBack");
-/////////////
+
+/////////////////////////////////////////////////////////////////////////
 
 document.querySelector(".menu_triger").addEventListener("click", function () {
   document.querySelector(".side_nav ").classList.toggle("hidden");
@@ -35,7 +36,7 @@ book_remove.addEventListener("click", function () {
   book_back.classList.remove("activeBook");
 });
 
-/////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
 
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
@@ -44,7 +45,7 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null;
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
