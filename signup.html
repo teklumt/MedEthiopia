@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MedEthiopia</title>
@@ -15,222 +15,272 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="nav_left">
-        <img src="icons/meet-icon.svg" alt="" />
-        MedEthiopia
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="hospitals.html">Hospitals</a></li>
-          <li><a href="doctors.html">Doctors</a></li>
-          <li class="book"><button class="book">Book</button></li>
-          <li class="signins"><a href="signup.html">Sign in</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div class="menu">
-        <i class="menu_triger fa-solid fa-bars"></i>
-      </div>
-      <div>
-        <div class="side_nav hidden">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hospitals.html">Hospitals</a></li>
-            <li><a href="doctors.html">Doctors</a></li>
-            <li class="book"><button class="book">Book</button></li>
-            <li class="signins"><a href="signup.html">Sign in</a></li>
-          </ul>
+        <div class="nav_left">
+            <img src="icons/meet-icon.svg" alt="" />
+            MedEthiopia
         </div>
-      </div>
-      <div class="overlay hidden"></div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hospitals.html">Hospitals</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li class="book"><button class="book">Book</button></li>
+                <li class="signins"><a href="signup.html">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="menu">
+            <i class="menu_triger fa-solid fa-bars"></i>
+        </div>
+        <div>
+            <div class="side_nav hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hospitals.html">Hospitals</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li class="book"><button class="book">Book</button></li>
+                    <li class="signins"><a href="signup.html">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
     </section>
+
     <div class="form-modal">
-      <div class="form-toggle">
-        <button id="login-toggle" onclick="toggleLogin()">log in</button>
-        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
-      </div>
+        <div class="form-toggle">
+            <button id="login-toggle" onclick="toggleLogin()">log in</button>
+            <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+        </div>
 
-      <div id="login-form">
-        <form>
-          <input type="text" placeholder="Enter email or username" />
-          <input type="password" placeholder="Enter password" />
-          <a href="#">Forget password?</a>
-          <button type="button" class="btn login">login</button>
+        <div id="login-form">
+            <form id="loginForm">
+                <input type="text" placeholder="Enter email or username" id="loginUsername"/>
+                <input type="password" placeholder="Enter password" id="loginPassword" />
+                <a href="#">Forget password?</a>
+                <button type="submit" class="btn login">login</button>
+                <hr />
+            </form>
+        </div>
 
-          <hr />
-        </form>
-      </div>
-
-      <div id="signup-form">
-        <form>
-          <input type="text" placeholder="Full name" />
-          <input type="email" placeholder="Enter your email" required />
-          <input type="text" placeholder="Choose username" required />
-          <input type="password" placeholder="Create password" />
-          <button type="button" class="btn signup">create account</button>
-          <p>
-            Clicking <strong>create account</strong> means that you are agree to
-            our <a href="javascript:void(0)">terms of services</a>.
-          </p>
-          <hr />
-        </form>
-      </div>
+        <div id="signup-form">
+            <form id="signupForm">
+                <input type="text" placeholder="Full name" id="fullName" />
+                <input type="email" placeholder="Enter your email" required id="email"/>
+                <input type="text" placeholder="Choose username" required id="signupUsername" />
+                <input type="password" placeholder="Create password" id="signupPassword"/>
+                <button type="submit" class="btn signup">create account</button>
+                <p>
+                    Clicking <strong>create account</strong> means that you agree to
+                    our <a href="javascript:void(0)">terms of services</a>.
+                </p>
+                <hr />
+            </form>
+        </div>
     </div>
-    <script>
-      function toggleSignup() {
-        document.getElementById("login-toggle").style.backgroundColor = "#fff";
-        document.getElementById("login-toggle").style.color = "#222";
-        document.getElementById("signup-toggle").style.backgroundColor =
-          "#3c39dd";
-        document.getElementById("signup-toggle").style.color = "#fff";
-        document.getElementById("login-form").style.display = "none";
-        document.getElementById("signup-form").style.display = "block";
-      }
 
-      function toggleLogin() {
-        document.getElementById("login-toggle").style.backgroundColor =
-          "#3c39dd";
-        document.getElementById("login-toggle").style.color = "#fff";
-        document.getElementById("signup-toggle").style.backgroundColor = "#fff";
-        document.getElementById("signup-toggle").style.color = "#222";
-        document.getElementById("signup-form").style.display = "none";
-        document.getElementById("login-form").style.display = "block";
-      }
-    </script>
     <div class="flow_back"></div>
     <section class="hidden_window">
-      <div class="flow">
-        <div class="books1">
-          <div class="book2">
-            <button class="remove_Book">X</button>
-            <h2>Book Now</h2>
-            <form action="#">
-              <br /><input
-                type="text"
-                name="name"
-                id="fname"
-                placeholder="Fullname"
-                required
-              />
-              <br /><input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your Email"
-                required
-              />
-              <br />Age
-              <input
-                type="number"
-                name="name"
-                id="age"
-                placeholder="18"
-                min="18"
-                required
-              />
-              <br />Sex
-              <label for="M"><input type="radio" id="M" name="Sex" />M</label
-              ><label for="M"><input name="Sex" type="radio" id="F" />F</label>
-              <br /><input
-                type="text"
-                id="hospitals"
-                list="host"
-                placeholder="Select Hospital"
-                required
-              />
-              <datalist id="host" aria-required="true">
-                <option value="Tikur Anbessa Specialized Hospital">
-                  Tikur Anbessa Specialized Hospital
-                </option>
-                <option value="Nordic medical centre">
-                  Nordic medical centre
-                </option>
-                <option value="Bethzatha General Hospital">
-                  Bethzatha General Hospital
-                </option>
-              </datalist>
-              <br />Date
-              <input type="datetime-local" name="date" id="date" />
-              <br /><input type="button" id="sub" value="Book" />
-            </form>
-          </div>
+        <div class="flow">
+            <div class="books1">
+                <div class="book2">
+                    <button class="remove_Book">X</button>
+                    <h2>Book Now</h2>
+                    <form action="#">
+                        <br /><input
+                            type="text"
+                            name="name"
+                            id="fname"
+                            placeholder="Fullname"
+                            required
+                        />
+                        <br /><input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your Email"
+                            required
+                        />
+                        <br />Age
+                        <input
+                            type="number"
+                            name="name"
+                            id="age"
+                            placeholder="18"
+                            min="18"
+                            required
+                        />
+                        <br />Sex
+                        <label for="M"><input type="radio" id="M" name="Sex" />M</label
+                        ><label for="M"><input name="Sex" type="radio" id="F" />F</label>
+                        <br /><input
+                            type="text"
+                            id="hospitals"
+                            list="host"
+                            placeholder="Select Hospital"
+                            required
+                        />
+                        <datalist id="host" aria-required="true">
+                            <option value="Tikur Anbessa Specialized Hospital">
+                                Tikur Anbessa Specialized Hospital
+                            </option>
+                            <option value="Nordic medical centre">
+                                Nordic medical centre
+                            </option>
+                            <option value="Bethzatha General Hospital">
+                                Bethzatha General Hospital
+                            </option>
+                        </datalist>
+                        <br />Date
+                        <input type="datetime-local" name="date" id="date" />
+                        <br /><input type="button" id="sub" value="Book" />
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
+
     <footer>
-<<<<<<< HEAD
         <div class="footer_data">
-          <div class="footer_grid">
-            <div class="footer_grids">
-              <h1>Explore</h1>
-              <div><a href="index.html">Home</a>
-              </div>
-              <div><a href="hospitals.html">Hospitals</a></div>
-              <div> <a href="doctors.html">Doctors</a>
-              </div>
-            
-             
-              <div><a href="#">About Us</a>
-              </div>
-    
-    
-</div>
-<div class="footer_grids">
-  <h1>Contact</h1>
-  <div><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;Addis Ababa Ethiopia</div>
-  <div><i class="fa-solid fa-envelopes-bulk"></i>&nbsp;&nbsp;<a href="#">medethiopia@email.com</a></div>
-  <div><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;(+251) 090-0423-958 </div>
-</div>
-<div class="footer_grids">
-  <h1>Book an appointment</h1>
-  <p>The MedEthiopia staff members are
-    well trained professionals.</p>
-  <div class="last_appointment"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;(+251) 090-0423-958 </div>
-=======
-      <div class="footer_data">
-        <div class="footer_grid">
-          <div class="footer_grids">
-            <h1>Explore</h1>
-            <div><a href="index.html">Home</a></div>
-            <div><a href="hospitals.html">Hospitals</a></div>
-            <div><a href="doctors.html">Doctors</a></div>
-            <div><a href="blog.html">Blog</a></div>
-            <div><a href="#">About Us</a></div>
-          </div>
-          <div class="footer_grids">
-            <h1>Contact</h1>
-            <div>
-              <i class="fa-solid fa-location-dot"></i
-              >&nbsp;&nbsp;&nbsp;&nbsp;Addis Ababa Ethiopia
+            <div class="footer_grid">
+                <div class="footer_grids">
+                    <h1>Explore</h1>
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="hospitals.html">Hospitals</a></div>
+                    <div><a href="doctors.html">Doctors</a></div>
+                    <div><a href="blog.html">Blog</a></div>
+                    <div><a href="#">About Us</a></div>
+                </div>
+                <div class="footer_grids">
+                    <h1>Contact</h1>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i
+                        >&nbsp;&nbsp;&nbsp;&nbsp;Addis Ababa Ethiopia
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelopes-bulk"></i>&nbsp;&nbsp;<a href="#"
+                            >medethiopia@email.com</a
+                        >
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;(+251) 090-0423-958
+                    </div>
+                </div>
+                <div class="footer_grids">
+                    <h1>Book an appointment</h1>
+                    <p>The MedEthiopia staff members are well trained professionals.</p>
+                    <div class="last_appointment">
+                        <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;(+251) 090-0423-958
+                    </div>
+                </div>
             </div>
-            <div>
-              <i class="fa-solid fa-envelopes-bulk"></i>&nbsp;&nbsp;<a href="#"
-                >medethiopia@email.com</a
-              >
-            </div>
-            <div>
-              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;(+251) 090-0423-958
-            </div>
-          </div>
-          <div class="footer_grids">
-            <h1>Book an appointment</h1>
-            <p>The MedEthiopia staff members are well trained professionals.</p>
-            <div class="last_appointment">
-              <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;(+251) 090-0423-958
-            </div>
-          </div>
+            &copy;MedEthiopia 2023
         </div>
-        &copy;MedEthiopia 2023
-      </div>
     </footer>
->>>>>>> b7faf660c6866a2c80a4f6267a321acc44f93346
 
     <script src="signin.js"></script>
-  </body>
+    <script>
+        // Function to toggle between login and signup forms
+        function toggleSignup() {
+            document.getElementById("login-toggle").style.backgroundColor = "#fff";
+            document.getElementById("login-toggle").style.color = "#222";
+            document.getElementById("signup-toggle").style.backgroundColor = "#3c39dd";
+            document.getElementById("signup-toggle").style.color = "#fff";
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("signup-form").style.display = "block";
+        }
+
+        function toggleLogin() {
+            document.getElementById("login-toggle").style.backgroundColor = "#3c39dd";
+            document.getElementById("login-toggle").style.color = "#fff";
+            document.getElementById("signup-toggle").style.backgroundColor = "#fff";
+            document.getElementById("signup-toggle").style.color = "#222";
+            document.getElementById("signup-form").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+        }
+
+        // Array to store user data
+        let users = [];
+
+        // Function to add a new user to the array
+        function addUser(fullName, email, username, password) {
+            users.push({ fullName: fullName, email: email, username: username, password: password });
+        }
+
+        // Function to validate email address
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Function to validate password format
+        function isValidPassword(password) {
+            var passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            return passwordRegex.test(password);
+        }
+
+        // Event listener for signup form submission
+        document.getElementById('signupForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById('fullName').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var username = document.getElementById('signupUsername').value.trim();
+            var password = document.getElementById('signupPassword').value.trim();
+
+            if (fullName === '' || email === '' || username === '' || password === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            if (!isValidPassword(password)) {
+                alert('Password must contain at least one uppercase letter, one number, and one special character.');
+                return;
+            }
+
+            addUser(fullName, email, username, password);
+            alert('Signup successful! Welcome to MedEthiopia');
+
+            // Clear the form fields
+            document.getElementById('signupForm').reset();
+        });
+
+        // Event listener for login form submission
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var loginUsername = document.getElementById('loginUsername').value.trim();
+            var loginPassword = document.getElementById('loginPassword').value.trim();
+
+            if (loginUsername === '' || loginPassword === '') {
+                alert('Please enter both username/email and password.');
+                return;
+            }
+
+            var foundUser = users.find(function (user) {
+                return (user.email === loginUsername || user.username === loginUsername) && user.password === loginPassword;
+            });
+
+            if (foundUser) {
+                alert('Login successful!');
+                // Clear the form fields
+                window.open("index.html", "_self")
+                // document.getElementById('loginForm').reset();
+            } else {
+                alert('Invalid username/email or password.');
+            }
+        });
+        console.log(users)
+    </script>
+</body>
 </html>
